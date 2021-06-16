@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Just stream it - Accueil</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body id="body">
+        <header>
+            <h1>Just stream it</h1>
+            <div id="header_buttons">
+                <a id="button_header" href="./main.html"><h4>Accueil</h4></a>
+                  
+            </div>
+        </header>
+        <div id="most_rated_container" onclick="getMovieFromSlider(0,0)">
+            <div id="most_rated_title_container">
+                <p id="most_rated_title"></p>
+                <button id="btn_most_rated">Get More Information</button>
+                <p id="most_rated_description"></p>
+            </div>
+            <img src="file://null" alt id="most_rated_img">
+        </div>
+        <div>
+            <h4 class="title_slide_show">Most rated film</h4>
+            <div class="slide_show_container">
+                <i class="fa fa-angle-left icon" onclick="shiftSlider(0,-1)"></i>
+                
+                <div class="slide_0" onclick="getMovieFromSlider(1,0)">
+                    <img src="file://null" alt class="slide_0_img">
+                </div>
+                
+                <div class="slide_0" onclick="getMovieFromSlider(1,1)">
+                    <img src="file://null" alt class="slide_0_img">
+                </div>
+
+                <div class="slide_0" onclick="getMovieFromSlider(1,2)">
+                    <img src="file://null" alt class="slide_0_img">
+                </div>
+
+                <div class="slide_0" onclick="getMovieFromSlider(1,3)">
+                    <img src="file://null" alt class="slide_0_img">
+                </div>
+
+                <div class="slide_0" onclick="getMovieFromSlider(1,4)">
+                    <img src="file://null" alt class="slide_0_img">
+                </div>
+
+                <div class="slide_0" onclick="getMovieFromSlider(1,5)">
+                    <img src="file://null" alt class="slide_0_img">
+                </div>
+
+                <div class="slide_0" onclick="getMovieFromSlider(1,6)">
+                    <img src="file://null" alt class="slide_0_img">
+                </div>
+
+                <i class="fa fa-angle-right icon last_icon" onclick="shiftSlider(0,1)"></i>
+            </div>
+        </div>
+        <div>
+            <h4 class="title_slide_show">Music</h4>
+            <div class="slide_show_container">
+                <i class="fa fa-angle-left icon" onclick="shiftSlider(1,-1)"></i>
+                
+                <div class="slide_1" onclick="getMovieFromSlider(2,0)">
+                    <img src="file://null" alt class="slide_1_img">
+                </div>
+                
+                <div class="slide_1" onclick="getMovieFromSlider(2,1)">
+                    <img src="file://null" alt class="slide_1_img">
+                </div>
+
+                <div class="slide_1" onclick="getMovieFromSlider(2,2)">
+                    <img src="file://null" alt class="slide_1_img">
+                </div>
+
+                <div class="slide_1" onclick="getMovieFromSlider(2,3)">
+                    <img src="file://null" alt class="slide_1_img">
+                </div>
+
+                <div class="slide_1" onclick="getMovieFromSlider(2,4)">
+                    <img src="file://null" alt class="slide_1_img">
+                </div>
+
+                <div class="slide_1" onclick="getMovieFromSlider(2,5)">
+                    <img src="file://null" alt class="slide_1_img">
+                </div>
+
+                <div class="slide_1" onclick="getMovieFromSlider(2,6)">
+                    <img src="file://null" alt class="slide_1_img">
+                </div>
+
+                <i class="fa fa-angle-right icon last_icon" onclick="shiftSlider(1,1)"></i>
+            </div>
+        </div>
+        <div>
+            <h4 class="title_slide_show">Action</h4>
+            <div class="slide_show_container">
+                <i class="fa fa-angle-left icon" onclick="shiftSlider(2,-1)"></i>
+                
+                <div class="slide_2" onclick="getMovieFromSlider(3,0)">
+                    <img src="file://null" alt class="slide_2_img">
+                </div>
+                
+                <div class="slide_2" onclick="getMovieFromSlider(3,1)">
+                    <img src="file://null" alt class="slide_2_img">
+                </div>
+
+                <div class="slide_2" onclick="getMovieFromSlider(3,2)">
+                    <img src="file://null" alt class="slide_2_img">
+                </div>
+
+                <div class="slide_2" onclick="getMovieFromSlider(3,3)">
+                    <img src="file://null" alt class="slide_2_img">
+                </div>
+
+                <div class="slide_2" onclick="getMovieFromSlider(3,4)">
+                    <img src="file://null" alt class="slide_2_img">
+                </div>
+
+                <div class="slide_2" onclick="getMovieFromSlider(3,5)">
+                    <img src="file://null" alt class="slide_2_img">
+                </div>
+
+                <div class="slide_2" onclick="getMovieFromSlider(3,6)">
+                    <img src="file://null" alt class="slide_2_img">
+                </div>
+
+                <i class="fa fa-angle-right icon last_icon" onclick="shiftSlider(2,1)"></i>
+            </div>
+        </div>
+        <div>
+            <h4 class="title_slide_show">Drama</h4>
+            <div class="slide_show_container">
+                <i class="fa fa-angle-left icon" onclick="shiftSlider(3,-1)"></i>
+                
+                <div class="slide_3" onclick="getMovieFromSlider(4,0)">
+                    <img src="file://null" alt class="slide_3_img">
+                </div>
+                
+                <div class="slide_3" onclick="getMovieFromSlider(4,1)">
+                    <img src="file://null" alt class="slide_3_img">
+                </div>
+
+                <div class="slide_3" onclick="getMovieFromSlider(4,2)">
+                    <img src="file://null" alt class="slide_3_img">
+                </div>
+
+                <div class="slide_3" onclick="getMovieFromSlider(4,3)">
+                    <img src="file://null" alt class="slide_3_img">
+                </div>
+
+                <div class="slide_3" onclick="getMovieFromSlider(4,4)">
+                    <img src="file://null" alt class="slide_3_img">
+                </div>
+
+                <div class="slide_3" onclick="getMovieFromSlider(4,5)">
+                    <img src="file://null" alt class="slide_3_img">
+                </div>
+
+                <div class="slide_3" onclick="getMovieFromSlider(4,6)">
+                    <img src="file://null" alt class="slide_3_img">
+                </div>
+
+                <i class="fa fa-angle-right icon last_icon" onclick="shiftSlider(3,1)"></i>
+            </div>
+        </div>
+        <div id="modal_container">
+            <div id ="modal">
+                <i class="fa fa-close" id="modal_close"></i>
+                <div id="modal_header">
+                    <div id="modal_header_text">
+                        <p id="modal_title"></p>
+                        <p id="modal_description"></p>
+                    </div>
+                    <img src="file://null" alt id ="modal_img">
+                </div>
+                <div>
+                    <div>
+                        <p id="modal_genres"></p>
+                        <p id="modal_release"></p>
+                        <p id="modal_directors"></p>
+                        <p id="modal_actors"></p>
+                        <p id="modal_duration"></p>
+                    </div>
+                    <div>
+                        <p id="modal_box_office"></p>
+                        <p id="modal_rated"></p>
+                        <p id="modal_imdb_score"></p>
+                        <p id="modal_countries"></p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <script src="scripts/modal.js"></script>
+        <script src="scripts/movieManager.js"></script>
+        <script src="scripts/SlideShow.js"></script>
+        <script src="scripts/MoviesIdManager.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>
+
+</html>
